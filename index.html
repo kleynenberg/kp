@@ -1,0 +1,374 @@
+<!-- ============================================================================ -->
+<!-- INTEGRITY HEADER - GEMINI AI                                                 -->
+<!-- File: kp/index.html                                                          -->
+<!-- Application: Kleynenberg Publishers (KP / naaap.io) Catalogue                -->
+<!-- ============================================================================ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kleynenberg Publishers (KP) — Independent Digital Publishing &amp; Algorithmic Media</title>
+    <meta name="description" content="Kleynenberg Publishers (Delft, The Netherlands): independent publisher of historical monographs, visual satire, broadsheet editions, and algorithmic music on Google Play Books and Suno.">
+    <link rel="canonical" href="https://steven.kleynenberg.com/kp/">
+    <link rel="alternate" type="text/plain" title="KP LLM Summary" href="https://steven.kleynenberg.com/kp/llms.txt">
+    <link rel="alternate" type="text/plain" title="KP LLM Full Catalogue" href="https://steven.kleynenberg.com/kp/llms-full.txt">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "@id": "https://steven.kleynenberg.com/kp/#organization",
+      "name": "Kleynenberg Publishers",
+      "alternateName": ["KP", "naaap.io"],
+      "url": "https://steven.kleynenberg.com/kp/",
+      "logo": "https://steven.kleynenberg.com/kp/logo.svg",
+      "founder": {
+        "@type": "Person",
+        "name": "Steven Kleynenberg",
+        "url": "https://steven.kleynenberg.com/"
+      },
+      "publishingPrinciples": "Independent, ad-free, paywall-free digital monographs, visual essays, broadsheets, and algorithmic media."
+    }
+    </script>
+    <style>
+        :root {
+            --bg-main: #ffffff;
+            --bg-surface: #fafafa;
+            --text-primary: #111111;
+            --text-secondary: #4a4a4a;
+            --text-muted: #767676;
+            --border-color: #e0e0e0;
+            --border-strong: #111111;
+            --accent: #0056b3;
+        }
+        html.reverse-mode {
+            --bg-main: #000000;
+            --bg-surface: #0a0a0a;
+            --text-primary: #f5f5f5;
+            --text-secondary: #c0c0c0;
+            --text-muted: #888888;
+            --border-color: #262626;
+            --border-strong: #f5f5f5;
+            --accent: #66b2ff;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-primary);
+            font-family: 'Atkinson Hyperlegible Next', -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.65;
+            transition: background-color 0.2s ease, color 0.2s ease;
+            padding: 3rem 1.5rem 5rem;
+            max-width: 980px;
+            margin: 0 auto;
+        }
+        .top-bar {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 1rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 2.5rem;
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            letter-spacing: 0.04em;
+        }
+        .nav-group { display: flex; flex-wrap: wrap; gap: 0.85rem; align-items: center; }
+        .top-bar a { color: var(--text-primary); text-decoration: none; border-bottom: 1px solid transparent; }
+        .top-bar a:hover, .top-bar a.active { border-bottom-color: var(--border-strong); font-weight: 700; }
+        .mode-btn {
+            background: transparent;
+            border: 1px solid var(--border-color);
+            color: var(--text-secondary);
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.72rem;
+            padding: 0.25rem 0.6rem;
+            cursor: pointer;
+            text-transform: uppercase;
+        }
+        .mode-btn:hover { border-color: var(--border-strong); color: var(--text-primary); }
+        header.hero { margin-bottom: 3rem; }
+        .eyebrow {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            color: var(--text-muted);
+            margin-bottom: 0.5rem;
+        }
+        .hero-header-row {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1.5rem;
+        }
+        .brand-logo {
+            max-height: 64px;
+            width: auto;
+            display: block;
+            border: 1px solid var(--border-color);
+            padding: 4px;
+            background: #ffffff;
+        }
+        h1 { font-size: clamp(1.85rem, 3.8vw, 2.6rem); font-weight: 700; line-height: 1.15; letter-spacing: -0.02em; margin-bottom: 0.75rem; }
+        .lead { font-size: 1.08rem; color: var(--text-secondary); max-width: 780px; }
+        .meta-strip {
+            display: flex; flex-wrap: wrap; gap: 1.5rem; margin-top: 1.25rem;
+            font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.78rem; color: var(--text-muted);
+        }
+        h2.section-title {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.85rem;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+            color: var(--text-primary);
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid var(--border-strong);
+            margin: 2.75rem 0 1.25rem;
+        }
+        .grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
+        article.card {
+            border: 1px solid var(--border-color);
+            background: var(--bg-surface);
+            padding: 1.4rem 1.5rem;
+        }
+        .card-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.45rem; }
+        .card-tag { font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+        article.card h3 { font-size: 1.22rem; font-weight: 700; margin-bottom: 0.45rem; }
+        article.card p { color: var(--text-secondary); font-size: 0.98rem; margin-bottom: 0.75rem; }
+        article.card ul { margin: 0.4rem 0 0.85rem 1.25rem; color: var(--text-secondary); font-size: 0.95rem; }
+        article.card li { margin-bottom: 0.3rem; }
+        .url-list {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.78rem;
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+            margin-top: 0.65rem;
+            padding-top: 0.65rem;
+            border-top: 1px dashed var(--border-color);
+        }
+        .url-list a { color: var(--accent); text-decoration: none; word-break: break-all; }
+        .url-list a:hover { text-decoration: underline; }
+        table.manifest-table {
+            width: 100%; border-collapse: collapse; font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.8rem; margin-top: 0.75rem;
+        }
+        table.manifest-table th, table.manifest-table td {
+            text-align: left; padding: 0.65rem 0.5rem; border-bottom: 1px solid var(--border-color); vertical-align: top;
+        }
+        table.manifest-table th { color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 0.72rem; }
+        table.manifest-table a { color: var(--accent); text-decoration: none; word-break: break-all; }
+        table.manifest-table a:hover { text-decoration: underline; }
+        footer.colophon {
+            margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);
+            font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.76rem; color: var(--text-muted);
+            display: flex; flex-wrap: wrap; justify-content: space-between; gap: 1rem;
+        }
+        footer.colophon a { color: var(--text-primary); text-decoration: none; }
+        footer.colophon a:hover { text-decoration: underline; }
+
+    </style>
+
+    <style id="kp-play-books-style">
+      .kp-play-section { max-width: 980px; margin: 1.5rem auto; padding: 1.25rem; border: 1px solid #dcdcdc; background: #f8f9fa; }
+      .kp-play-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
+      .kp-play-icon { width: 32px; height: 32px; flex: 0 0 32px; display: block; }
+      .kp-play-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.85rem; margin-top: 0.75rem; }
+      .kp-play-card { background: #ffffff; border: 1px solid #dcdcdc; padding: 0.9rem; }
+      .kp-play-card h3 { margin: 0 0 0.35rem; font-size: 1rem; }
+      .kp-play-meta { font-size: 0.85rem; color: #555555; margin: 0 0 0.5rem; }
+      .kp-play-link { display: inline-block; font-weight: 600; color: #111111; text-decoration: none; border-bottom: 1px solid #111111; }
+    </style>
+</head>
+<body>
+    <nav class="top-bar" aria-label="Primary portal navigation">
+        <div class="nav-group">
+            <a href="../index.html">steven.kleynenberg.com</a> <a href="../papers/index.html">/papers/</a> <a href="../kso/index.html">/kso/</a> <a href="../pp/index.html">/pp/</a> <a href="../kp/index.html" class="active">/kp/</a> <a href="../tkp/index.html">/tkp/</a>
+        </div>
+        <div class="nav-group">
+            <a href="./llms.txt">llms.txt</a>
+            <a href="./llms-full.txt">llms-full.txt</a>
+            <button type="button" class="mode-btn" id="theme-toggle" title="Double-tap page or click to toggle Reverse Dark Mode">Invert</button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="eyebrow">INDEPENDENT PUBLISHING HOUSE // DELFT, THE NETHERLANDS</div>
+        <div class="hero-header-row">
+            <div>
+                <h1>Kleynenberg Publishers</h1>
+                <p class="lead">Independent publishing imprint and algorithmic media studio (<strong>KP</strong> / <strong>naaap.io</strong>) edited and published by Steven Kleynenberg. Producing curated historical photography monographs, visual satire, broadsheet editions, and algorithmic music.</p>
+            </div>
+            <img src="./logo.svg" alt="Kleynenberg Publishers / NAAAP Emblem" class="brand-logo">
+        </div>
+        <div class="meta-strip">
+            <span>IMPRINT: KLEYNENBERG PUBLISHERS</span>
+            <span>DISTRIBUTION: GOOGLE PLAY BOOKS &middot; DIRECT PDF/EPUB &middot; SUNO</span>
+            <span>CANONICAL: https://steven.kleynenberg.com/kp/</span>
+        </div>
+    </header>
+
+    <main>
+        <h2 class="section-title">01 // Published Books &amp; Monographs (Google Play Books)</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Historical Photography &amp; Heritage</span>
+                    <span class="card-tag">Google Play Books</span>
+                </div>
+                <h3>Arps Fotoalbum</h3>
+                <p>Restored archival family and historical photography monograph curated and published under Kleynenberg Publishers.</p>
+                <div class="url-list">
+                    <a href="https://play.google.com/store/books/details?id=w5oBEgAAQBAJ">https://play.google.com/store/books/details?id=w5oBEgAAQBAJ</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Biographical &amp; Visual Monograph</span>
+                    <span class="card-tag">Google Play Books</span>
+                </div>
+                <h3>Bernardus Arps</h3>
+                <p>Dedicated biographical and visual documentation edition preserving primary archival material and historical context.</p>
+                <div class="url-list">
+                    <a href="https://play.google.com/store/books/details?id=V5gDEgAAQBAJ">https://play.google.com/store/books/details?id=V5gDEgAAQBAJ</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Cultural History &amp; Parody</span>
+                    <span class="card-tag">Google Play Books</span>
+                </div>
+                <h3>Niet van Herg&eacute; &mdash; De Grappigste, Scherpste en Vreemdste Kuifje-Parodie&euml;n</h3>
+                <p>Critical and humorous anthology examining unofficial Tintin (Kuifje) pastiches, underground parodies, and ligne claire satire.</p>
+                <div class="url-list">
+                    <a href="https://play.google.com/store/books/details?id=bqgDEgAAQBAJ">https://play.google.com/store/books/details?id=bqgDEgAAQBAJ</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Bilingual Monochrome Art Exhibition EPUB</span>
+                    <span class="card-tag">2026 &middot; Google Play Books</span>
+                </div>
+                <h3>GIGA! Garbage In, Garbage Out &mdash; Une &Eacute;tude en Ordure et Lumi&egrave;re</h3>
+                <p>Bilingual French/English monochrome visual art monograph exploring machine aesthetics, entropy, light, and synthetic imagery.</p>
+                <div class="url-list">
+                    <a href="https://play.google.com/store/books/details?id=gdf0EQAAQBAJ">https://play.google.com/store/books/details?id=gdf0EQAAQBAJ</a>
+                </div>
+            </article>
+        </div>
+
+        <h2 class="section-title">02 // Broadsheet Editions &amp; Algorithmic Media</h2>
+        <div class="grid">
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Broadsheet Archival Print</span>
+                    <span class="card-tag">PDF &middot; November 2026</span>
+                </div>
+                <h3>De Nederlandsche Courant &mdash; Special Broadsheet Edition</h3>
+                <p>Typographic broadsheet edition chronicling the 1985&ndash;2026 research and publishing trajectory of Steven Kleynenberg.</p>
+                <div class="url-list">
+                    <a href="https://steven.kleynenberg.com/papers/De-Nederlandsche-Courant-Steven-Kleynenberg-2026-11-19.pdf">https://steven.kleynenberg.com/papers/De-Nederlandsche-Courant-Steven-Kleynenberg-2026-11-19.pdf</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Algorithmic Music Production</span>
+                    <span class="card-tag">Suno Studio</span>
+                </div>
+                <h3>Algorithmic Jazz Fusion &amp; Instrumental Compositions</h3>
+                <p>Original instrumental fusion and atmospheric compositions produced under Kleynenberg Publishers, exploring guitar-driven phrasing and nocturnal harmonics.</p>
+                <div class="url-list">
+                    <a href="https://suno.com/s/UCPMG1b2T6LZ8FM1">https://suno.com/s/UCPMG1b2T6LZ8FM1</a>
+                </div>
+            </article>
+
+            <article class="card">
+                <div class="card-header">
+                    <span class="card-tag">Algorithmic Cinema</span>
+                    <span class="card-tag">4K 60fps Visuals</span>
+                </div>
+                <h3>Generative Time-Lapse &amp; Multilingual Video Synthesis</h3>
+                <p>High-framerate 4K dynamic landscape studies and automated multilingual voice-and-SVG video compositions rendered via local Linux pipelines.</p>
+                <div class="url-list">
+                    <a href="https://steven.kleynenberg.com/kp/">https://steven.kleynenberg.com/kp/</a>
+                </div>
+            </article>
+        </div>
+    <!-- PLAY_BOOKS_SECTION_START -->
+<section class="kp-play-section" id="google-play-books" aria-labelledby="kp-play-books-title">
+  <div class="kp-play-header">
+    <img src="./google-play-books.svg" alt="Google Play Books" class="kp-play-icon" width="32" height="32">
+    <h2 id="kp-play-books-title" style="margin:0;font-size:1.3rem;">Google Play Books — Kleynenberg Publishers</h2>
+  </div>
+  <p style="margin:0 0 0.5rem;">
+    Uitgaven van <strong>Kleynenberg Publishers</strong> (met <strong>Steven Kleynenberg</strong> &amp; <strong>Gemini v3.5</strong>) op Google Play Books:
+  </p>
+  <div class="kp-play-grid">
+    <article class="kp-play-card">
+      <h3>Niet van Hergé - De Grappigste, Scherpste en Vreemdste Kuifje-Parodieën</h3>
+      <p class="kp-play-meta">GGKEY:4WNCBGYBW23 &middot; Nederlands &middot; 20 aug 2026</p>
+      <a class="kp-play-link" href="https://play.google.com/store/books/details?id=bqgDEgAAQBAJ" rel="noopener">Bekijk op Google Play Books</a>
+    </article>
+    <article class="kp-play-card">
+      <h3>Bernardus Arps - Meester van de Veluwezoom</h3>
+      <p class="kp-play-meta">GGKEY:60F4ZPYKJ6Y &middot; Nederlands &middot; 20 aug 2026</p>
+      <a class="kp-play-link" href="https://play.google.com/store/books/details?id=V5gDEgAAQBAJ" rel="noopener">Bekijk op Google Play Books</a>
+    </article>
+    <article class="kp-play-card">
+      <h3>Kleynenberg System Font Atlas (Gemini v3.5 Edition)</h3>
+      <p class="kp-play-meta">GGKEY:CF7T9528FY3 &middot; English &middot; 16 aug 2026</p>
+      <a class="kp-play-link" href="https://play.google.com/store/books/details?id=w5oBEgAAQBAJ" rel="noopener">Bekijk op Google Play Books</a>
+    </article>
+    <article class="kp-play-card">
+      <h3>Arps Fotoalbum: Een reis door de familiegeschiedenis (Editie Gemini v3.5)</h3>
+      <p class="kp-play-meta">GGKEY:QWGA3U8UNPK &middot; Nederlands &middot; 14 jul 2026</p>
+      <a class="kp-play-link" href="https://play.google.com/store/books/details?id=gdf0EQAAQBAJ" rel="noopener">Bekijk op Google Play Books</a>
+    </article>
+  </div>
+</section>
+<!-- PLAY_BOOKS_SECTION_END -->
+</main>
+
+    <footer class="colophon">
+        <div>&copy; mmxxvi kleynenberg publishers &mdash; <a href="https://kleynenberg.com">https://kleynenberg.com</a></div>
+        <div>
+            <a href="https://steven.kleynenberg.com/">https://steven.kleynenberg.com/</a> &middot;
+            <a href="./llms.txt">./llms.txt</a> &middot;
+            <a href="./llms-full.txt">./llms-full.txt</a>
+        </div>
+    </footer>
+    <script>
+        (function() {
+            const root = document.documentElement;
+            const btn = document.getElementById('theme-toggle');
+            if (localStorage.getItem('sk_reverse_mode') === '1') {
+                root.classList.add('reverse-mode');
+            }
+            function toggleMode() {
+                root.classList.toggle('reverse-mode');
+                localStorage.setItem('sk_reverse_mode', root.classList.contains('reverse-mode') ? '1' : '0');
+            }
+            if (btn) btn.addEventListener('click', toggleMode);
+            let lastTap = 0;
+            document.addEventListener('dblclick', function(e) {
+                if (!e.target.closest('a, button, summary')) toggleMode();
+            });
+            document.addEventListener('touchend', function(e) {
+                const now = Date.now();
+                if (now - lastTap < 300 && !e.target.closest('a, button, summary')) toggleMode();
+                lastTap = now;
+            }, { passive: true });
+        })();
+    </script>
+</body>
+</html>

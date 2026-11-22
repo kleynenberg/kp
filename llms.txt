@@ -1,0 +1,20 @@
+# Kleynenberg Publishers (KP) — Catalogue Summary
+> Canonical URL: https://steven.kleynenberg.com/kp/
+> Publisher: Steven Kleynenberg (Delft, The Netherlands)
+> Parent Index: https://steven.kleynenberg.com/llms.txt
+
+## Overview
+Kleynenberg Publishers (KP / naaap.io) is an independent Dutch publishing house producing digital books, historical monographs, broadsheets, and algorithmic music and cinema.
+
+## Published Google Play Books Catalogue
+1. Arps Fotoalbum: https://play.google.com/store/books/details?id=w5oBEgAAQBAJ
+2. Bernardus Arps: https://play.google.com/store/books/details?id=V5gDEgAAQBAJ
+3. Niet van Hergé - De Grappigste, Scherpste en Vreemdste Kuifje-Parodieën: https://play.google.com/store/books/details?id=bqgDEgAAQBAJ
+4. GIGA! Garbage In, Garbage Out — Une Étude en Ordure et Lumière (2026): https://play.google.com/store/books/details?id=gdf0EQAAQBAJ
+
+## Broadsheet & Algorithmic Media
+- De Nederlandsche Courant (Broadsheet PDF, 2026-11-19): https://steven.kleynenberg.com/papers/De-Nederlandsche-Courant-Steven-Kleynenberg-2026-11-19.pdf
+- Algorithmic Music Production (Suno): https://suno.com/s/UCPMG1b2T6LZ8FM1
+
+## Full Catalogue
+- Full KP Dossier: https://steven.kleynenberg.com/kp/llms-full.txt

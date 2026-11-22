@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 180" width="850" height="180">
+  <defs>
+    <style type="text/css">
+      .bg-card {
+        fill: #5c6873;
+      }
+      .brand-title {
+        font-family: 'VAGRoundedStd', 'Comfortaa', 'Arial Rounded MT Bold', sans-serif;
+        font-weight: bold;
+        font-size: 64px;
+        fill: #ffcc00;
+        letter-spacing: 1px;
+      }
+      .brand-sub {
+        font-family: 'VAGRoundedStd', 'Comfortaa', 'Arial Rounded MT Bold', sans-serif;
+        font-weight: bold;
+        font-size: 20px;
+        fill: #ffcc00;
+        letter-spacing: 0.5px;
+      }
+    </style>
+  </defs>
+
+  <!-- Afgeronde kaart met transparante buitenranden -->
+  <rect x="10" y="10" width="830" height="160" rx="20" ry="20" class="bg-card"/>
+
+  <!-- Bovenaan: naaap.io -->
+  <text x="45" y="82" class="brand-title">naaap.io</text>
+
+  <!-- Onderaan: 100% breed uitgelijnde betekenis met Publishing en correcte &amp; -->
+  <text x="45" y="132" class="brand-sub">Network for Autonomous Audiovisual &amp; Algorithmic Publishing</text>
+</svg>

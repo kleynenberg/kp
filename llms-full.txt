@@ -1,0 +1,39 @@
+# Kleynenberg Publishers (KP) — Complete Catalogue & Media Corpus
+Canonical URL: https://steven.kleynenberg.com/kp/llms-full.txt
+Imprint: Kleynenberg Publishers (KP / naaap.io)
+Editor & Publisher: Steven Kleynenberg
+Location: Delft, South Holland, The Netherlands
+
+================================================================================
+1. GOOGLE PLAY BOOKS PUBLICATIONS
+================================================================================
+[BOOK 1] Arps Fotoalbum
+- Store URL: https://play.google.com/store/books/details?id=w5oBEgAAQBAJ
+- Category: Historical & Archival Photography Monograph
+
+[BOOK 2] Bernardus Arps
+- Store URL: https://play.google.com/store/books/details?id=V5gDEgAAQBAJ
+- Category: Biographical & Visual Documentation
+
+[BOOK 3] Niet van Hergé - De Grappigste, Scherpste en Vreemdste Kuifje-Parodieën
+- Store URL: https://play.google.com/store/books/details?id=bqgDEgAAQBAJ
+- Category: Cultural History, Comics Scholarship & Satire
+
+[BOOK 4] GIGA! Garbage In, Garbage Out — Une Étude en Ordure et Lumière
+- Store URL: https://play.google.com/store/books/details?id=gdf0EQAAQBAJ
+- Year: 2026
+- Category: Bilingual French/English Monochrome Visual Art Exhibition EPUB
+
+================================================================================
+2. BROADSHEET & ALGORITHMIC MEDIA PRODUCTIONS
+================================================================================
+[BROADSHEET] De Nederlandsche Courant (2026-11-19)
+- PDF URL: https://steven.kleynenberg.com/papers/De-Nederlandsche-Courant-Steven-Kleynenberg-2026-11-19.pdf
+- Description: Archival newspaper-format overview of Steven Kleynenberg's 1985–2026 scientific, patent, and publishing output.
+
+[ALGORITHMIC MUSIC] Kleynenberg Publishers Audio Releases
+- Featured Track URL: https://suno.com/s/UCPMG1b2T6LZ8FM1
+- Description: Instrumental jazz-fusion and atmospheric compositions produced with custom ID3v2.4 metadata and cover art.
+
+[ALGORITHMIC CINEMA] Generative Visuals
+- Description: 4K 60fps dynamic landscape time-lapses and automated multilingual SVG + neural TTS video productions.
