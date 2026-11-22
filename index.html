@@ -10,9 +10,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kleynenberg Publishers (KP) — Independent Digital Publishing &amp; Algorithmic Media</title>
     <meta name="description" content="Kleynenberg Publishers (Delft, The Netherlands): independent publisher of historical monographs, visual satire, broadsheet editions, and algorithmic music on Google Play Books and Suno.">
-    <link rel="canonical" href="https://steven.kleynenberg.com/kp/">
-    <link rel="alternate" type="text/plain" title="KP LLM Summary" href="https://steven.kleynenberg.com/kp/llms.txt">
-    <link rel="alternate" type="text/plain" title="KP LLM Full Catalogue" href="https://steven.kleynenberg.com/kp/llms-full.txt">
+    <link rel="canonical" href="https://kp.kleynenberg.com/">
+    <link rel="alternate" type="text/plain" title="KP LLM Summary" href="https://kp.kleynenberg.com/llms.txt">
+    <link rel="alternate" type="text/plain" title="KP LLM Full Catalogue" href="https://kp.kleynenberg.com/llms-full.txt">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible+Mono:wght@400;700&family=Atkinson+Hyperlegible+Next:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
@@ -20,11 +20,11 @@
     {
       "@context": "https://schema.org",
       "@type": "Organization",
-      "@id": "https://steven.kleynenberg.com/kp/#organization",
+      "@id": "https://kp.kleynenberg.com/#organization",
       "name": "Kleynenberg Publishers",
       "alternateName": ["KP", "naaap.io"],
-      "url": "https://steven.kleynenberg.com/kp/",
-      "logo": "https://steven.kleynenberg.com/kp/logo.svg",
+      "url": "https://kp.kleynenberg.com/",
+      "logo": "https://kp.kleynenberg.com/logo.svg",
       "founder": {
         "@type": "Person",
         "name": "Steven Kleynenberg",
@@ -131,6 +131,15 @@
             padding-bottom: 0.5rem;
             border-bottom: 2px solid var(--border-strong);
             margin: 2.75rem 0 1.25rem;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+        }
+        .section-icon {
+            width: 22px;
+            height: 22px;
+            flex: 0 0 22px;
+            display: inline-block;
         }
         .grid { display: grid; grid-template-columns: 1fr; gap: 1.25rem; }
         article.card {
@@ -138,8 +147,22 @@
             background: var(--bg-surface);
             padding: 1.4rem 1.5rem;
         }
-        .card-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: baseline; gap: 0.5rem; margin-bottom: 0.45rem; }
-        .card-tag { font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.75rem; color: var(--text-muted); text-transform: uppercase; }
+        .card-header { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 0.5rem; margin-bottom: 0.45rem; }
+        .card-tag {
+            font-family: 'Atkinson Hyperlegible Mono', monospace;
+            font-size: 0.75rem;
+            color: var(--text-muted);
+            text-transform: uppercase;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.45rem;
+        }
+        .play-badge-icon {
+            width: 18px;
+            height: 18px;
+            flex: 0 0 18px;
+            display: inline-block;
+        }
         article.card h3 { font-size: 1.22rem; font-weight: 700; margin-bottom: 0.45rem; }
         article.card p { color: var(--text-secondary); font-size: 0.98rem; margin-bottom: 0.75rem; }
         article.card ul { margin: 0.4rem 0 0.85rem 1.25rem; color: var(--text-secondary); font-size: 0.95rem; }
@@ -149,22 +172,18 @@
             font-size: 0.78rem;
             display: flex;
             flex-direction: column;
-            gap: 0.3rem;
+            gap: 0.35rem;
             margin-top: 0.65rem;
             padding-top: 0.65rem;
             border-top: 1px dashed var(--border-color);
         }
+        .play-link-row {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.55rem;
+        }
         .url-list a { color: var(--accent); text-decoration: none; word-break: break-all; }
         .url-list a:hover { text-decoration: underline; }
-        table.manifest-table {
-            width: 100%; border-collapse: collapse; font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.8rem; margin-top: 0.75rem;
-        }
-        table.manifest-table th, table.manifest-table td {
-            text-align: left; padding: 0.65rem 0.5rem; border-bottom: 1px solid var(--border-color); vertical-align: top;
-        }
-        table.manifest-table th { color: var(--text-muted); font-weight: 700; text-transform: uppercase; font-size: 0.72rem; }
-        table.manifest-table a { color: var(--accent); text-decoration: none; word-break: break-all; }
-        table.manifest-table a:hover { text-decoration: underline; }
         footer.colophon {
             margin-top: 4rem; padding-top: 1.5rem; border-top: 1px solid var(--border-color);
             font-family: 'Atkinson Hyperlegible Mono', monospace; font-size: 0.76rem; color: var(--text-muted);
@@ -172,24 +191,17 @@
         }
         footer.colophon a { color: var(--text-primary); text-decoration: none; }
         footer.colophon a:hover { text-decoration: underline; }
-
-    </style>
-
-    <style id="kp-play-books-style">
-      .kp-play-section { max-width: 980px; margin: 1.5rem auto; padding: 1.25rem; border: 1px solid #dcdcdc; background: #f8f9fa; }
-      .kp-play-header { display: flex; align-items: center; gap: 0.75rem; margin-bottom: 0.75rem; }
-      .kp-play-icon { width: 32px; height: 32px; flex: 0 0 32px; display: block; }
-      .kp-play-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 0.85rem; margin-top: 0.75rem; }
-      .kp-play-card { background: #ffffff; border: 1px solid #dcdcdc; padding: 0.9rem; }
-      .kp-play-card h3 { margin: 0 0 0.35rem; font-size: 1rem; }
-      .kp-play-meta { font-size: 0.85rem; color: #555555; margin: 0 0 0.5rem; }
-      .kp-play-link { display: inline-block; font-weight: 600; color: #111111; text-decoration: none; border-bottom: 1px solid #111111; }
     </style>
 </head>
 <body>
     <nav class="top-bar" aria-label="Primary portal navigation">
         <div class="nav-group">
-            <a href="../index.html">steven.kleynenberg.com</a> <a href="../papers/index.html">/papers/</a> <a href="../kso/index.html">/kso/</a> <a href="../pp/index.html">/pp/</a> <a href="../kp/index.html" class="active">/kp/</a> <a href="../tkp/index.html">/tkp/</a>
+            <a href="https://steven.kleynenberg.com/">steven.kleynenberg.com</a>
+            <a href="https://steven.kleynenberg.com/papers/">/papers/</a>
+            <a href="https://kso.kleynenberg.com/">/kso/</a>
+            <a href="https://pp.kleynenberg.com/">/pp/</a>
+            <a href="https://kp.kleynenberg.com/" class="active">/kp/</a>
+            <a href="https://tkp.kleynenberg.com/">/tkp/</a>
         </div>
         <div class="nav-group">
             <a href="./llms.txt">llms.txt</a>
@@ -210,58 +222,85 @@
         <div class="meta-strip">
             <span>IMPRINT: KLEYNENBERG PUBLISHERS</span>
             <span>DISTRIBUTION: GOOGLE PLAY BOOKS &middot; DIRECT PDF/EPUB &middot; SUNO</span>
-            <span>CANONICAL: https://steven.kleynenberg.com/kp/</span>
+            <span>CANONICAL: https://kp.kleynenberg.com/</span>
         </div>
     </header>
 
     <main>
-        <h2 class="section-title">01 // Published Books &amp; Monographs (Google Play Books)</h2>
+        <h2 class="section-title">
+            <img src="./google-play-books.svg" alt="Google Play Books" class="section-icon" width="22" height="22">
+            <span>01 // Published Books &amp; Monographs (Google Play Books)</span>
+        </h2>
         <div class="grid">
             <article class="card">
                 <div class="card-header">
-                    <span class="card-tag">Historical Photography &amp; Heritage</span>
-                    <span class="card-tag">Google Play Books</span>
+                    <span class="card-tag">Historical Photography &amp; Heritage &middot; GGKEY:QWGA3U8UNPK</span>
+                    <span class="card-tag">
+                        <img src="./google-play-books.svg" alt="Google Play Books" class="play-badge-icon" width="18" height="18">
+                        Google Play Books
+                    </span>
                 </div>
-                <h3>Arps Fotoalbum</h3>
-                <p>Restored archival family and historical photography monograph curated and published under Kleynenberg Publishers.</p>
+                <h3>Arps Fotoalbum &mdash; Een reis door de familiegeschiedenis</h3>
+                <p>Restored archival family and historical photography monograph curated and published under Kleynenberg Publishers (Nederlands &middot; 14 jul 2026).</p>
                 <div class="url-list">
-                    <a href="https://play.google.com/store/books/details?id=w5oBEgAAQBAJ">https://play.google.com/store/books/details?id=w5oBEgAAQBAJ</a>
+                    <div class="play-link-row">
+                        <img src="./google-play-books.svg" alt="" aria-hidden="true" class="play-badge-icon" width="18" height="18">
+                        <a href="https://play.google.com/store/books/details?id=w5oBEgAAQBAJ">https://play.google.com/store/books/details?id=w5oBEgAAQBAJ</a>
+                    </div>
                 </div>
             </article>
 
             <article class="card">
                 <div class="card-header">
-                    <span class="card-tag">Biographical &amp; Visual Monograph</span>
-                    <span class="card-tag">Google Play Books</span>
+                    <span class="card-tag">Biographical &amp; Visual Monograph &middot; GGKEY:60F4ZPYKJ6Y</span>
+                    <span class="card-tag">
+                        <img src="./google-play-books.svg" alt="Google Play Books" class="play-badge-icon" width="18" height="18">
+                        Google Play Books
+                    </span>
                 </div>
-                <h3>Bernardus Arps</h3>
-                <p>Dedicated biographical and visual documentation edition preserving primary archival material and historical context.</p>
+                <h3>Bernardus Arps &mdash; Meester van de Veluwezoom</h3>
+                <p>Dedicated biographical and visual documentation edition preserving primary archival material and historical context (Nederlands &middot; 20 aug 2026).</p>
                 <div class="url-list">
-                    <a href="https://play.google.com/store/books/details?id=V5gDEgAAQBAJ">https://play.google.com/store/books/details?id=V5gDEgAAQBAJ</a>
+                    <div class="play-link-row">
+                        <img src="./google-play-books.svg" alt="" aria-hidden="true" class="play-badge-icon" width="18" height="18">
+                        <a href="https://play.google.com/store/books/details?id=V5gDEgAAQBAJ">https://play.google.com/store/books/details?id=V5gDEgAAQBAJ</a>
+                    </div>
                 </div>
             </article>
 
             <article class="card">
                 <div class="card-header">
-                    <span class="card-tag">Cultural History &amp; Parody</span>
-                    <span class="card-tag">Google Play Books</span>
+                    <span class="card-tag">Cultural History &amp; Parody &middot; GGKEY:4WNCBGYBW23</span>
+                    <span class="card-tag">
+                        <img src="./google-play-books.svg" alt="Google Play Books" class="play-badge-icon" width="18" height="18">
+                        Google Play Books
+                    </span>
                 </div>
                 <h3>Niet van Herg&eacute; &mdash; De Grappigste, Scherpste en Vreemdste Kuifje-Parodie&euml;n</h3>
-                <p>Critical and humorous anthology examining unofficial Tintin (Kuifje) pastiches, underground parodies, and ligne claire satire.</p>
+                <p>Critical and humorous anthology examining unofficial Tintin (Kuifje) pastiches, underground parodies, and ligne claire satire (Nederlands &middot; 20 aug 2026).</p>
                 <div class="url-list">
-                    <a href="https://play.google.com/store/books/details?id=bqgDEgAAQBAJ">https://play.google.com/store/books/details?id=bqgDEgAAQBAJ</a>
+                    <div class="play-link-row">
+                        <img src="./google-play-books.svg" alt="" aria-hidden="true" class="play-badge-icon" width="18" height="18">
+                        <a href="https://play.google.com/store/books/details?id=bqgDEgAAQBAJ">https://play.google.com/store/books/details?id=bqgDEgAAQBAJ</a>
+                    </div>
                 </div>
             </article>
 
             <article class="card">
                 <div class="card-header">
-                    <span class="card-tag">Bilingual Monochrome Art Exhibition EPUB</span>
-                    <span class="card-tag">2026 &middot; Google Play Books</span>
+                    <span class="card-tag">Bilingual Monochrome Art Exhibition EPUB &middot; 2026</span>
+                    <span class="card-tag">
+                        <img src="./google-play-books.svg" alt="Google Play Books" class="play-badge-icon" width="18" height="18">
+                        Google Play Books
+                    </span>
                 </div>
                 <h3>GIGA! Garbage In, Garbage Out &mdash; Une &Eacute;tude en Ordure et Lumi&egrave;re</h3>
                 <p>Bilingual French/English monochrome visual art monograph exploring machine aesthetics, entropy, light, and synthetic imagery.</p>
                 <div class="url-list">
-                    <a href="https://play.google.com/store/books/details?id=gdf0EQAAQBAJ">https://play.google.com/store/books/details?id=gdf0EQAAQBAJ</a>
+                    <div class="play-link-row">
+                        <img src="./google-play-books.svg" alt="" aria-hidden="true" class="play-badge-icon" width="18" height="18">
+                        <a href="https://play.google.com/store/books/details?id=gdf0EQAAQBAJ">https://play.google.com/store/books/details?id=gdf0EQAAQBAJ</a>
+                    </div>
                 </div>
             </article>
         </div>
@@ -300,44 +339,11 @@
                 <h3>Generative Time-Lapse &amp; Multilingual Video Synthesis</h3>
                 <p>High-framerate 4K dynamic landscape studies and automated multilingual voice-and-SVG video compositions rendered via local Linux pipelines.</p>
                 <div class="url-list">
-                    <a href="https://steven.kleynenberg.com/kp/">https://steven.kleynenberg.com/kp/</a>
+                    <a href="https://kp.kleynenberg.com/">https://kp.kleynenberg.com/</a>
                 </div>
             </article>
         </div>
-    <!-- PLAY_BOOKS_SECTION_START -->
-<section class="kp-play-section" id="google-play-books" aria-labelledby="kp-play-books-title">
-  <div class="kp-play-header">
-    <img src="./google-play-books.svg" alt="Google Play Books" class="kp-play-icon" width="32" height="32">
-    <h2 id="kp-play-books-title" style="margin:0;font-size:1.3rem;">Google Play Books — Kleynenberg Publishers</h2>
-  </div>
-  <p style="margin:0 0 0.5rem;">
-    Uitgaven van <strong>Kleynenberg Publishers</strong> (met <strong>Steven Kleynenberg</strong> &amp; <strong>Gemini v3.5</strong>) op Google Play Books:
-  </p>
-  <div class="kp-play-grid">
-    <article class="kp-play-card">
-      <h3>Niet van Hergé - De Grappigste, Scherpste en Vreemdste Kuifje-Parodieën</h3>
-      <p class="kp-play-meta">GGKEY:4WNCBGYBW23 &middot; Nederlands &middot; 20 aug 2026</p>
-      <a class="kp-play-link" href="https://play.google.com/store/books/details?id=bqgDEgAAQBAJ" rel="noopener">Bekijk op Google Play Books</a>
-    </article>
-    <article class="kp-play-card">
-      <h3>Bernardus Arps - Meester van de Veluwezoom</h3>
-      <p class="kp-play-meta">GGKEY:60F4ZPYKJ6Y &middot; Nederlands &middot; 20 aug 2026</p>
-      <a class="kp-play-link" href="https://play.google.com/store/books/details?id=V5gDEgAAQBAJ" rel="noopener">Bekijk op Google Play Books</a>
-    </article>
-    <article class="kp-play-card">
-      <h3>Kleynenberg System Font Atlas (Gemini v3.5 Edition)</h3>
-      <p class="kp-play-meta">GGKEY:CF7T9528FY3 &middot; English &middot; 16 aug 2026</p>
-      <a class="kp-play-link" href="https://play.google.com/store/books/details?id=w5oBEgAAQBAJ" rel="noopener">Bekijk op Google Play Books</a>
-    </article>
-    <article class="kp-play-card">
-      <h3>Arps Fotoalbum: Een reis door de familiegeschiedenis (Editie Gemini v3.5)</h3>
-      <p class="kp-play-meta">GGKEY:QWGA3U8UNPK &middot; Nederlands &middot; 14 jul 2026</p>
-      <a class="kp-play-link" href="https://play.google.com/store/books/details?id=gdf0EQAAQBAJ" rel="noopener">Bekijk op Google Play Books</a>
-    </article>
-  </div>
-</section>
-<!-- PLAY_BOOKS_SECTION_END -->
-</main>
+    </main>
 
     <footer class="colophon">
         <div>&copy; mmxxvi kleynenberg publishers &mdash; <a href="https://kleynenberg.com">https://kleynenberg.com</a></div>
